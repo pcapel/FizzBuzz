@@ -1,0 +1,65 @@
+<!doctype html>
+
+<head>
+
+	<title>Fo fizzle my rizzle</title>
+
+</head>
+
+<body>
+
+	<h1>This is a fizzbuzz test.</h1>
+
+	<button id="startFizzBuzz">Start.</button>
+
+	<div id = "fizzbuzzReturn"></div>
+
+
+</body>
+
+
+
+<script type="text/javascript">
+	
+	document.getElementById("startFizzBuzz").onclick=function(){
+	
+	for(var i = 1; i < 100; i++) {
+		
+		if (i % 3 == 0) {
+			
+			document.getElementById("fizzbuzzReturn").innerHTML = document.getElementById("fizzbuzzReturn").innerHTML + i + " fizz" ;
+
+			if (i % 5 !=0){
+
+				document.getElementById("fizzbuzzReturn").innerHTML = document.getElementById("fizzbuzzReturn").innerHTML + "<br/>";
+
+			}
+
+			if (i % 5 == 0){
+
+				document.getElementById("fizzbuzzReturn").innerHTML = document.getElementById("fizzbuzzReturn").innerHTML + "buzz,";
+
+				document.getElementById("fizzbuzzReturn").innerHTML = document.getElementById("fizzbuzzReturn").innerHTML + "<br/>";
+
+			}
+					
+		} else if (i % 5 == 0) {
+
+			document.getElementById("fizzbuzzReturn").innerHTML = document.getElementById("fizzbuzzReturn").innerHTML + i + " buzz," + "<br/>";
+
+		} else {
+
+			document.getElementById("fizzbuzzReturn").innerHTML = document.getElementById("fizzbuzzReturn").innerHTML + i + "," + "<br/>";
+
+		}
+	}
+}
+
+
+
+
+
+
+</script>
+
+</html>
